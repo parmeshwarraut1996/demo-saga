@@ -1,0 +1,496 @@
+@import '../../main.less';
+
+.succes {
+    background-color: @Selected-radio-color;
+    opacity         : 0.3
+}
+
+.mainDiv {
+    flex: 1;
+
+
+}
+
+.loadingDiv {
+    .mainDiv();
+    opacity: 0.5;
+}
+
+.popoverView {
+    flex-direction: row;
+    align-items   : center
+}
+
+.downArrow {
+    height: 10px;
+    width : 10px;
+}
+
+.pickerView {
+    width                 : 45%;
+    margin                : 10px;
+    flex-direction        : row;
+    align-items           : center;
+    // background-color   : red;
+    position              : relative;
+    background-color      : transparent;
+}
+
+.locationView {
+    flex-direction : row;
+    justify-content: flex-start;
+
+    align-items: center
+}
+
+.mapIcon {
+    height: 10px;
+    width : 10px;
+}
+
+.bottomOuter {
+    background-color: white;
+    height          : 65px;
+    width           : 102%;
+    align-items     : center;
+    justify-content : center;
+
+}
+
+.errorView {
+    // width: 100%;
+    flex: 1;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+ margin-top: 200px;
+}
+
+.reloadIcon {
+    height: 50px;
+    width : 50px;
+}
+.Text{
+    font-size: 20px
+}
+
+.searchCard {
+    // border-color   : black;
+    // border-width   : 3px;
+    // border-style   : solid;
+    width             : 91%;
+    height            : 45px;
+    flex-direction    : row;
+    // justify-content: space-between;
+    border-radius     : 5px;
+    align-items       : center;
+    elevation         : 3;
+    margin-left       : 1px;
+    background-color  : white
+}
+
+.picker {
+    width           : 100%;
+    height          : 50;
+    background-color: transparent;
+    color           : #FFFFFF
+}
+
+.searchIcon {
+    margin-left: 10px;
+    height     : 17px;
+    width      : 17px;
+}
+
+.TextInput {
+    margin: 3px;
+    width : 80%;
+}
+
+.cardnameText {
+    font-weight: bold;
+    font-family: @Medium;
+    font-size  : 13px;
+    color      : @Text-Color
+}
+
+.cardEmailtext {
+    font-family: @Regular;
+    font-size  : 10px;
+    color      : #252729;
+}
+
+.Usercard {
+    elevation          : 1;
+    border-radius      : 5px;
+    margin             : 5px 10px 5px 10px;
+    flex-direction     : row;
+    // width           : 230px;
+    height             : 80px;
+    padding            : 5px;
+    align-items        : center;
+    border-width       : 1px;
+    border-style       : solid;
+    background-color   : #FCFCFC;
+    border-color       : #EEECEC;
+    position           : relative;
+}
+
+.searchUsercard {
+    .Usercard();
+    width: 230px;
+}
+
+.selectedView {
+    .Usercard();
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    opacity     : 0.3;
+    elevation   : 0;
+}
+
+.avatarIcon {
+    height          : 40px;
+    width           : 40px;
+    border-radius   : 20px;
+    background-color: black
+}
+
+.detailView {
+    flex-direction: column;
+    margin-left   : 10px;
+}
+
+.locationText {
+    font-size: 10px;
+}
+
+.bottomView {
+    position       : relative;
+    bottom         : 0;
+    width          : 98%;
+    //   align-self: flex-end;
+}
+
+.counterOuterview {
+    background-color: @Dashboard-topView-Background;
+    width           : 100%;
+    padding         : 10px;
+    height          : 80px;
+    border-radius   : 0px 0px 35px 35px;
+}
+
+.counterView {
+    flex-direction     : row;
+    justify-content    : space-evenly;
+    align-items        : center;
+    // height          : 50px;
+    width              : 100%;
+    background-color   : @Counter-View-Background;
+    height             : 60px;
+    //   margin        :10px;
+    border-radius      : 28px;
+}
+
+.counter {
+    width                : 33.33%;
+    border-right-style   : solid;
+    border-right-color   : @Cancel-button-Border;
+    border-right-width   : 1px;
+    height               : 50px;
+    // align-content     : center;
+    align-items          : center;
+    justify-content      : center
+}
+
+.TBDcounter {
+    .counter();
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    height         : 100%;
+    padding        : 5px;
+
+}
+
+.counterinnerView {
+    .counter();
+    border-right-style   : none;
+    border-right-color   : @Cancel-button-Border;
+    border-right-width   : 0px;
+    height               : 100%;
+    width                : 80%;
+    justify-content      : flex-start;
+    // margin-top        : 3px;
+    flex-direction       : column;
+    justify-content      : center;
+    align-items          : center
+}
+
+.tbdinnerView {
+    // .counterinnerView();;
+    //  padding-bottom   : 10px;
+    flex-direction       : column;
+    height               : 100%;
+    width                : 100%;
+    align-items          : center;
+    justify-content      : center;
+
+}
+
+.topView {
+    width           : 100%;
+    flex-direction  : row;
+    justify-content : space-between;
+    align-items     : center;
+    background-color: @Dashboard-topView-Background;
+    height          : 50px;
+}
+
+.rejectCounter {
+    .counter();
+    border-right-style: none;
+    border-right-color: white;
+    border-right-width: 0px;
+
+
+}
+
+.dateViewText {
+    color    : @Dashboard-topView-Background;
+    font-size: 14px;
+}
+
+.dateView {
+    // font-weight: bold;
+
+    flex-direction : row;
+    justify-content: space-between;
+    width          : 90%;
+    margin-right   : 2px;
+
+}
+
+.calenderImage {
+    height     : 17px;
+    width      : 15px;
+    margin-left: 5px;
+
+}
+
+.datePicker {
+    width           : 120px;
+    height          : 30px;
+    background-color: #FFFFFF;
+    border-radius   : 13px;
+    flex-direction  : row;
+    align-items     : center;
+    margin-right    : 10px;
+    color           : #E26003;
+    justify-content : space-between;
+
+}
+
+.dateView {
+    padding       : 5px;
+    flex-direction: row;
+    align-items   : center;
+    color         : white;
+    font-size     : 10px;
+
+}
+
+.screenImage {
+    margin: 20px;
+}
+
+.counterNumber {
+    font-size            : 24px;
+    font-family          : @Medium;
+    color                : #FFFFFF;
+    width                : 100%;
+    // flex              : 1;
+    // margin-bottom     : -5px;
+    //  flex-direction   : row;
+    //  flex-Wrap        : wrap
+}
+
+.tbdtextView {
+    width          : 100%;
+    align-items    : center;
+    justify-content: center
+}
+
+.counterText {
+    font-family        : @Medium;
+    font-size          : 10px;
+    color              : @text-font-color;
+    width              : 100%;
+    //  flex           : 1;
+    // margin-top      : 3px;
+    white-space        : nowrap;
+    // margin-bottom   : 2px;
+}
+
+.tdbCountertext {
+    .counterText();
+    align-self           : center //  margin-top   : 2px;
+        // margin-left   : 20px;
+}
+
+.cancelIcon {
+    height: 15px;
+    width : 15px;
+}
+
+.cancelView {
+    height          : 24px;
+    width           : 24px;
+    border-radius   : 12px;
+    background-color: @Dashboard-topView-Background;
+    align-items     : center;
+    justify-content : center;
+    margin-right    : -10px;
+
+}
+
+.mailIcon {
+    height      : 7px;
+    width       : 8px;
+    margin-right: 5px;
+}
+
+.usernameView {
+    margin-top    : -10px;
+    padding-bottom: 5px;
+
+}
+
+.userLocation {
+    .mailIcon();
+}
+
+.cardMail {
+    flex-direction: row;
+    align-items   : center;
+
+}
+
+.usernameText {
+    color      : @Text-Color;
+    font-size  : 12px;
+    font-weight: bold;
+    font-family: @Medium
+}
+
+.detailText {
+    font-family: @Regular;
+    font-size  : 11px;
+    color      : black;
+}
+
+.userDateview {
+    background-color: @Date-Background;
+    height          : 15px;
+    width           : 51px;
+    border-radius   : 13px;
+    align-items     : center;
+    justify-content : center;
+    position        : absolute;
+    right           : 0;
+    top             : 0;
+    margin          : 12px 10px 0px 0px;
+
+}
+
+.userDatetext {
+    font-size  : 8px;
+    color      : #5D5D5E;
+    font-family: @Medium;
+}
+
+.successMessage {
+    // background   : lighten(@Selected-radio-color,20);
+    background-color: @succes-message-background ;
+    height          : 30px;
+    // opacity      : 0.3;
+
+    border-radius  : 8px;
+    align-items    : center;
+    justify-content: center;
+    max-width      : 200px;
+    margin         : 5px;
+    padding        : 10px;
+    position       : relative;
+    flex-direction : column
+}
+
+.successText {
+    color: @Selected-radio-color;
+
+    font-size  : 12px;
+    font-family: @Medium;
+}
+
+.errorMessage {
+    .successMessage();
+    background-color: @rejected-background-color ;
+
+}
+
+.errorText {
+    .successText();
+    color: @rejected-radio-text;
+}
+
+.timeView {
+    background-color: white;
+    margin-right    : 15px;
+    //  position    : absolute;
+
+}
+
+.dateTimestamp {
+    font-size  : 10px;
+    font-family: @Medium;
+    color      : @text-font-color;
+}
+
+.messageView {
+    flex-direction : column;
+    justify-content: space-around;
+    align-items    : flex-end;
+    margin:5px;
+}
+
+.calendarText {
+    font-size  : 20px;
+    font-family: @Medium;
+    color      : #E26003;
+}
+
+.calendarButtonView {
+    flex-direction : row;
+    justify-content: space-around;
+    align-items    : center;
+    margin         : 10px;
+
+}
+
+.calendarInner {
+    flex-direction : column;
+    justify-content: space-between;
+    // align-items : center
+    height         : 450px;
+    width          : 250px;
+    overflow       : scroll
+}
+
+.downArrow {
+    position: absolute;
+    right   : 10;
+    height  : 10;
+    width   : 10;
+}

@@ -1,0 +1,405 @@
+@import '../ListView/Userlist.less';
+@import '../../main.less';
+@import '../Dashboard/Dashboard.less';
+
+.infomainView {
+    width: 100%;
+}
+
+.topDetailview {
+    background-color: @Dashboard-topView-Background;
+    border-radius   : 0px 0px 20px 20px;
+    //  height      : 52px;
+
+
+}
+
+.dashedView {
+    height          : 1px;
+    background-color: #F9A45C;
+    width           : 95%;
+    align-self      : center // margin:0px 10px 0px 10px 
+}
+
+.detailView {
+    flex-direction  : column;
+    background-color: @Dashboard-topView-Background;
+    margin-left     : 0px;
+    border-radius   : 0px 0px 20px 20px;
+    margin          : 0px 0px 15px 0px;
+    height          : 66px;
+
+
+}
+
+.innerDetailview {
+    margin-left: 40px;
+
+}
+
+.innerDetailviewEdit {
+    margin-left: 22px
+}
+
+.emailIcon {
+    height      : 9px;
+    width       : 9px;
+    margin-right: 10px;
+}
+
+.backNameView {
+    flex-direction: row;
+    align-items   : center;
+    margin-left   : 7px;
+    margin-bottom : -20px;
+    margin-top    : 10px;
+}
+
+.infoView {
+    flex           : 1;
+    margin-top     : 5px;
+    padding        : 0px 0px 0px 10px;
+    flex-direction : column;
+    justify-content: space-between;
+
+}
+
+.userNameText {
+    flex-direction: row;
+    margin-left   : 25px;
+    // padding-top:5px;
+
+}
+
+.userNameEdit {
+    flex-direction: row;
+    margin-left   : 25px;
+    align-items   : center;
+    padding       : 5px 0px 5px 0px;
+}
+
+
+.staticText {
+    font-weight: bold;
+    font-size  : 10px;
+}
+
+.dynamicText {
+    font-size  : 12px;
+    font-family: 'Montserrat Regular';
+    color      : white;
+
+
+}
+
+.locationView {
+    flex-direction: row;
+    margin-left   : 5px;
+    align-items   : center
+}
+
+.feedbackText {
+    color      : @Text-Color;
+    font-size  : 15px;
+    font-weight: bold;
+    margin-top : 10px;
+    font-family: @Medium
+}
+
+.emailView {
+    flex-direction: row;
+    margin-left   : 5px;
+    align-items   : center;
+
+}
+
+.multilineText {
+    border-color : #E8E8E8;
+    border-style : solid;
+    border-width : 2px;
+    max-width    : 100%;
+    // height    : 90px;
+    min-height   : 120px;
+    border-radius: 10px;
+    margin       : 10px 10px 10px 5px;
+    align-items  : flex-start;
+}
+
+.bottomSave {
+    flex-direction : row;
+    justify-content: flex-end;
+    width          : 100%;
+    padding        : 10px;
+
+}
+
+.cancelButton {
+    margin          : 5px;
+    width           : 88px;
+    height          : 35px;
+    border-radius   : 22px;
+    background-color: @primary-color;
+    color           : white;
+    align-items     : center;
+    justify-content : center;
+}
+
+.saveButton {
+    .cancelButton();
+    elevation   : 10;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.saveText {
+    color           : white;
+    background-color: @primary-color;
+    font-size       : 15px;
+    font-family     : @Medium
+}
+
+.backButton {
+    height     : 20px;
+    width      : 20px;
+    margin-left: 10px;
+
+}
+
+.backButtonEdit {
+    .backButton();
+    margin-left: 10px;
+
+}
+
+.topView {
+
+    justify-content : flex-start;
+    align-items     : flex-start;
+    flex-direction  : column;
+    height          : 55px;
+    padding-top     : 5px;
+    border-radius   : 0px;
+    background-image: linear-gradient(#E26003, #FF7B08)
+}
+
+.topViewInfo {
+    background-color: @Dashboard-topView-Background;
+    justify-content : flex-start;
+    align-items     : flex-start;
+    flex-direction  : column;
+    height          : 55px;
+    padding-top     : 5px;
+    border-radius   : 0px
+}
+
+.pointView {
+    border-width   : 1px;
+    border-style   : dashed;
+    border-color   : @Point-border-color;
+    height         : 40px;
+    width          : 95px;
+    align-items    : center;
+    justify-content: center;
+}
+
+.ackView {
+    flex-direction : row;
+    justify-content: space-around;
+    margin-top     : 3px;
+}
+
+.ackPoint {
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 5px;
+}
+
+.ackText {
+    font-size  : 12px;
+    color      : @Text-Color;
+    font-family: @Medium;
+    padding    : 0px;
+    font-weight: bold;
+}
+
+.statusView {
+    margin-top     : 3px;
+    flex-direction : row;
+    justify-content: space-between
+}
+
+.usernameText {
+    color         : white;
+    font-size     : 18px;
+    font-family   : @Semi-Bold;
+    // margin-left: 10px;
+    // font-weight: bold;
+}
+
+.statusText {
+    .feedbackText();
+}
+
+.remarkText {
+    .feedbackText();
+}
+
+.cancelView {
+    .cancelButton();
+    background-color: white;
+    color           : @text-font-color;
+    border-color    : @Cancel-button-Border;
+    border-width    : 1px;
+    border-style    : solid;
+    font-family     : @Medium;
+
+}
+
+.uncheckedButton {
+    height       : 16px;
+    width        : 16px;
+    border-radius: 8px;
+    border-color : @Unselect-radio-Border;
+    border-style : solid;
+    border-width : 1px;
+}
+
+.checkedButton {
+    height: 16px;
+    width : 16px;
+
+}
+
+.buttonView {
+    flex-direction : row;
+    justify-content: space-evenly;
+    margin-top     : 10px;
+}
+
+.buttonRadio {
+    flex-direction: row;
+    align-items   : center
+}
+
+.selectedText {
+    color      : @Selected-radio-color;
+    font-size  : 15px;
+    margin-left: 5px;
+    font-family: @Medium;
+}
+
+.rejectedText {
+    .selectedText();
+    color: @rejected-radio-text;
+}
+
+.tbdText {
+    .selectedText();
+    color: @primary-color;
+}
+
+.unselectedText {
+    .selectedText();
+    color: black;
+}
+
+.editTopView {
+    height     : 55px;
+    padding-top: 5px;
+    // height  : 55px;
+
+    // border-color    : @Dashboard-topView-Border;
+    background-color   : @Dashboard-topView-Background;
+
+    flex-direction : row;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.candidateText {
+    color      : @Text-Color;
+    font-size  : 15px;
+    font-family: @Semi-Bold;
+    margin-left: -20px;
+    color      : white;
+}
+
+.dateView {
+    .userDateview();
+    width           : 20%;
+    height          : 15px;
+    font-size       : 60%;
+    background-color: white;
+    color           : #5D5D5E
+}
+
+.dateText {
+    .userDatetext();
+    color: black
+}
+
+.edituserNameText {
+    .usernameText();
+
+    // margin-left: 32px;
+}
+
+.editPointView {
+    height          : 34px;
+    width           : 95px;
+    background-color: @location-Card-Background;
+    align-items     : center;
+    justify-content : center;
+}
+
+.pointText {
+    color         : @point-Text;
+    font-size     : 14px;
+    font-family   : @Medium;
+    // font-weight: bold;
+
+}
+
+.selectedButton {
+    flex-direction: row;
+    align-items   : center;
+}
+
+.remarkField {
+    width: 100%;
+}
+
+.pickerView {
+
+    width           : 90px;
+    height          : 34px;
+    border-color    : @Point-border-color;
+    border-style    : solid;
+    border-width    : 1px;
+    background-color: white;
+    align-items     : center
+}
+
+.pickerEdit {
+
+    padding: 5px;
+    .pointText();
+    color           : #000000;
+    width           : 100%;
+    background-color: transparent;
+}
+
+.textRemark {
+    margin: 10px;
+
+}
+
+.selectedDisable {
+    .selectedButton();
+    opacity: 0.3;
+}
+
+.remarkView {
+    margin-top: 15px;
+}
